@@ -11,7 +11,7 @@ from app import app, db
 from app.models import Menu
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-TEST_DB = os.path.join(BASE_DIR, 'test.db')
+TEST_DB = os.path.join(BASE_DIR, 'app.db')
 
 
 class BasicTests(unittest.TestCase):
