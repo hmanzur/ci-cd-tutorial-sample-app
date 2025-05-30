@@ -1,5 +1,5 @@
 # --- Stage 1: Build Stage ---
-FROM python:3.13-alpine3 as builder
+FROM python:3-alpine3.21 as builder
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt -r requirements-server.txt
 COPY . .
 
 # --- Stage 2: Production Stage ---
-FROM python:3.13-alpine3
+FROM python:3-alpine3.21
 
 WORKDIR /app
 
